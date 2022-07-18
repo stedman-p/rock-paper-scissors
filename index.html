@@ -10,9 +10,40 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <button id="play">Play</button>
+    <button id="start">start</button>
+    <div class="game toggle">
+        <h3 class="toggle">Welcome to Rock Paper Scissors!</h3>
+        <p class="toggle">Select your move</p>
+        <fieldset class="toggle">
+            <button id="rock-btn"class="toggle">Rock</button>
+            <button id="paper-btn"class="toggle">Paper</button>
+            <button id="scissors-btn"class="toggle">Scissors</button>
+        </fieldset>
+        <button id="play">Play round</button>
+    </div>
+    <div id="results">
+        <div id="choices">
+            <div id="player">Player</div>
+            <div id="cpu">CPU</div>
+        </div>
+        <div id="info">
+            <div id="rounds">
+                <p id="round-p">0</p>
+                <p>Rounds</p>
+            </div>
+            <div id="wins">
+                <p id="wins-p">0</p>
+                <p>Wins</p>
+            </div>
+            <div id="losses">
+                <p id="losses-p">0</p>
+                <p>Losses</p>
+            </div>
+        </div>
+    </div>
     <footer>
         <a href="https://www.flaticon.com/free-icons/rock-paper-scissors" title="rock paper scissors icons">Rock paper scissors icons created by Freepik - Flaticon</a>
+        <p>Fist, Hand, and Scissors by Cristiano Zoucas from NounProject.com</p>
     </footer>
 </body>
 </html>
