@@ -10,40 +10,49 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <button id="start">start</button>
-    <div class="game toggle">
-        <h3 class="toggle">Welcome to Rock Paper Scissors!</h3>
-        <p class="toggle">Select your move</p>
-        <fieldset class="toggle">
-            <button id="rock-btn"class="toggle">Rock</button>
-            <button id="paper-btn"class="toggle">Paper</button>
-            <button id="scissors-btn"class="toggle">Scissors</button>
-        </fieldset>
-        <button id="play">Play round</button>
-    </div>
-    <div id="results">
-        <div id="choices">
-            <div id="player">Player</div>
-            <div id="cpu">CPU</div>
+    <div class="container">
+        <div class="game toggle">
+            <h1 class="toggle">Let's Play Rock Paper Scissors!</h3>
+            <br>
+            <h3 class="toggle">Select your move</h3>
+            <fieldset class="toggle choices">
+                <input type="image" src="./img/rock-icon.svg" id="rock-btn" class="toggle choice-button choose-rock"></input>
+                <input type="image" src="./img/paper-icon.svg" id="paper-btn" class="toggle choice-button choose-paper"></input>
+                <input type="image" src="./img/scissors-icon.svg" id="scissors-btn" class="toggle choice-button choose-scissors"></input>
+            </fieldset>
+            <button id="play">Play round</button>
         </div>
-        <div id="info">
-            <div id="rounds">
-                <p id="round-p">0</p>
-                <p>Rounds</p>
+        <div class="results">
+            <div id="choices">
+                <div id="player">Player</div>
+                <div id="cpu">CPU</div>
             </div>
-            <div id="wins">
-                <p id="wins-p">0</p>
-                <p>Wins</p>
-            </div>
-            <div id="losses">
-                <p id="losses-p">0</p>
-                <p>Losses</p>
+            <div id="info">
+                <div class="game-counter">
+                    <p id="round-p">0</p>
+                    <p>Rounds</p>
+                </div>
+                <div class="game-counter">
+                    <p id="wins-p">0</p>
+                    <p>Wins</p>
+                </div>
+                <div class="game-counter">
+                    <p id="losses-p">0</p>
+                    <p>Losses</p>
+                </div>
             </div>
         </div>
+        <footer>
+            <h3 id="links">Links</h3>
+            <br>
+            <div id="links">
+                <a href="https://github.com/stedman-p" title="Peter Stedman">My Github</a>
+                <br>
+                <a href="https://www.flaticon.com/free-icons/rock-paper-scissors" title="rock paper scissors icons">Rock paper scissors icons created by Freepik - Flaticon</a>
+                <p>Fist, Hand, and Scissors by Cristiano Zoucas from NounProject.com</p>
+            </div>
+            
+        </footer>
     </div>
-    <footer>
-        <a href="https://www.flaticon.com/free-icons/rock-paper-scissors" title="rock paper scissors icons">Rock paper scissors icons created by Freepik - Flaticon</a>
-        <p>Fist, Hand, and Scissors by Cristiano Zoucas from NounProject.com</p>
-    </footer>
 </body>
 </html>

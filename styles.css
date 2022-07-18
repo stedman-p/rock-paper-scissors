@@ -46,3 +46,78 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+body {
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+p {
+
+}
+
+a {
+
+}
+
+button {
+
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+}
+
+/* center game */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+}
+
+/* 
+   Inputs
+*/
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#choices {
+    display: flex;
+    flex: row;
+}
+
+#info {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-counter {
+    border: 2px solid black;
+    margin: 5px;
+}
+
+input.choice-button {
+    height: 10em;
+    width: 10em;
+    margin: 0.5em;
+    padding: .25em;
+}
