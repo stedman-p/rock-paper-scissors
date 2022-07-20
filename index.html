@@ -1,18 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js" defer></script>
     <title>Rock Paper Scissors</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <button id="play">Play</button>
-    <footer>
-        <a href="https://www.flaticon.com/free-icons/rock-paper-scissors" title="rock paper scissors icons">Rock paper scissors icons created by Freepik - Flaticon</a>
-    </footer>
+    <div class="container">
+        <div class="header">
+            <h1 class="">Let's Play Rock Paper Scissors!</h3>
+        </div>
+        <div class="game ">
+            <br>
+            <h3 class="">Select your move</h3>
+            <fieldset class=" choices">
+                <label for="rock-radio">
+                    <input type="radio" name="rps-choice" id="rock-radio" value="r" class=" choice-button choose-rock"></input>
+                    <img src="./img/rock-icon.svg" alt="fist">
+                </label>
+                <label for="paper-radio">
+                    <input type="radio" name="rps-choice" id="paper-radio" value="p" class=" choice-button choose-paper"></input>
+                    <img src="./img/paper-icon.svg" alt="open hand">
+                </label>
+                <label for="scissors-radio">
+                    <input type="radio" name="rps-choice" id="scissors-radio" value="s" class=" choice-button choose-scissors"></input>
+                    <img src="./img/scissors-icon.svg" alt="fingers in scissor shape">
+                </label>
+            </fieldset>
+            <button id="play">Play round!</button>
+        </div>
+        <div class="results">
+            <div class="result-header">
+                <h3>Results:</h3>
+            </div>
+            <div id="choices">
+                <div id="player" class="choice">
+                    <img src="./img/question-mark.svg" alt="" class="choice-result" id="choice-player">
+                    <p>Player</p>
+                </div>
+                <div id="result">
+                    <p id="result-p">Test</p>
+                </div>
+                <div id="cpu" class="choice">
+                    <img src="./img/question-mark.svg" alt="" class="choice-result" id="choice-cpu">
+                    <p>CPU</p>
+                </div>
+            </div>
+            <div class="result-info">
+                <div id="info">
+                    <div class="game-counter">
+                        <p id="round-p">0</p>
+                        <p>Rounds</p>
+                    </div>
+                    <div class="game-counter">
+                        <p id="wins-p">0</p>
+                        <p>Wins</p>
+                    </div>
+                    <div class="game-counter">
+                        <p id="losses-p">0</p>
+                        <p>Losses</p>
+                    </div>
+                    <div class="game-counter">
+                        <p id="ties-p">0</p>
+                        <p>Ties</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h3>Links</h3>
+            <div id="links">
+                <div class="link">
+                    <a href="https://github.com/stedman-p" title="Peter Stedman">My Github</a>
+                </div>
+                <div class="link">
+                    <a href="https://www.flaticon.com/free-icons/rock-paper-scissors" title="rock paper scissors icons">Rock paper scissors icons created by Freepik - Flaticon</a>
+                </div>
+                <div class="link">
+                    <a href="https://thenounproject.com/cristiano.zoucas/" title="Cristiano Zoucas">Fist, Hand, and Scissors by Cristiano Zoucas from NounProject.com</a>
+                </div>
+            </div>
+            
+        </footer>
+    </div>
 </body>
 </html>
