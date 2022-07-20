@@ -12,15 +12,24 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1 class="toggle">Let's Play Rock Paper Scissors!</h3>
+            <h1 class="">Let's Play Rock Paper Scissors!</h3>
         </div>
-        <div class="game toggle">
+        <div class="game ">
             <br>
-            <h3 class="toggle">Select your move</h3>
-            <fieldset class="toggle choices">
-                <input type="radio" name="rps-choice" src="./img/rock-icon.svg" id="rock-btn" class="toggle choice-button choose-rock"></input>
-                <input type="radio" name="rps-choice" src="./img/paper-icon.svg" id="paper-btn" class="toggle choice-button choose-paper"></input>
-                <input type="radio" name="rps-choice" src="./img/scissors-icon.svg" id="scissors-btn" class="toggle choice-button choose-scissors"></input>
+            <h3 class="">Select your move</h3>
+            <fieldset class=" choices">
+                <label for="rock-radio">
+                    <input type="radio" name="rps-choice" id="rock-radio" value="r" class=" choice-button choose-rock"></input>
+                    <img src="./img/rock-icon.svg" alt="fist">
+                </label>
+                <label for="paper-radio">
+                    <input type="radio" name="rps-choice" id="paper-radio" value="p" class=" choice-button choose-paper"></input>
+                    <img src="./img/paper-icon.svg" alt="open hand">
+                </label>
+                <label for="scissors-radio">
+                    <input type="radio" name="rps-choice" id="scissors-radio" value="s" class=" choice-button choose-scissors"></input>
+                    <img src="./img/scissors-icon.svg" alt="fingers in scissor shape">
+                </label>
             </fieldset>
             <button id="play">Play round!</button>
         </div>
@@ -55,6 +64,10 @@
                         <p id="losses-p">0</p>
                         <p>Losses</p>
                     </div>
+                    <div class="game-counter">
+                        <p id="ties-p">0</p>
+                        <p>Ties</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -65,7 +78,7 @@
                 <a href="https://github.com/stedman-p" title="Peter Stedman">My Github</a>
                 <br>
                 <a href="https://www.flaticon.com/free-icons/rock-paper-scissors" title="rock paper scissors icons">Rock paper scissors icons created by Freepik - Flaticon</a>
-                <p>Fist, Hand, and Scissors by Cristiano Zoucas from NounProject.com</p>
+                <a href="https://thenounproject.com/cristiano.zoucas/" title="Cristiano Zoucas">Fist, Hand, and Scissors by Cristiano Zoucas from NounProject.com</a>
             </div>
             
         </footer>

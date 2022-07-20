@@ -94,12 +94,13 @@ h3 {
 }
 
 button {
-    border-width: 1.55px;
-    padding: 2px;
+    padding: 4.5px;
+    border: none;
     background-color: #e989c4;
     border-radius: .5em;
     box-shadow: 1px 2px 0px rgb(163, 163, 163);;
     font-weight: bold;
+    cursor: pointer;
 }
 
 button:hover {
@@ -165,7 +166,21 @@ fieldset {
     padding: 2em 0em 2em 0em;
 }
 
+/* Using https://stackoverflow.com/questions/17541614/use-images-instead-of-radio-buttons */
+
 input.choice-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position:absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+input + img {
     height: 10em;
     width: 10em;
     margin: 0.5em;
@@ -173,19 +188,25 @@ input.choice-button {
     background-color: #e989c4;
     border-radius: 10px;
     box-shadow: 2px 2px 20px grey;
+    cursor: pointer;
 }
 
-input.choice-button:hover {
+input + img:hover {
     box-shadow: none;
 }
 
-input.choice-button:active {
+input + img:active {
     background-color: #c271a3;
+}
+
+input:checked + img {
+    outline: 2px solid #412837;
 }
 
 button#play {
     margin: 10px 0px 10px 0px;
-    box-shadow: 2px 4px 20px grey;;
+    box-shadow: 2px 4px 20px grey;
+    color: #412837;
 }
 
 button#play:hover {
@@ -212,7 +233,7 @@ button#play:hover {
     display: flex;
     flex: row;
     justify-content: space-between;
-    padding-top: 1em;
+    margin: 1em;
 }
 
 .choice {
