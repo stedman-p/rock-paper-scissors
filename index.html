@@ -11,8 +11,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="game toggle">
+        <div class="header">
             <h1 class="toggle">Let's Play Rock Paper Scissors!</h3>
+        </div>
+        <div class="game toggle">
             <br>
             <h3 class="toggle">Select your move</h3>
             <fieldset class="toggle choices">
@@ -23,6 +25,9 @@
             <button id="play">Play round!</button>
         </div>
         <div class="results">
+            <div class="result-header">
+                <h3>Results:</h3>
+            </div>
             <div id="choices">
                 <div id="player" class="choice">
                     <img src="./img/question-mark.svg" alt="" class="choice-result" id="choice-player">
@@ -36,18 +41,20 @@
                     <p>CPU</p>
                 </div>
             </div>
-            <div id="info">
-                <div class="game-counter">
-                    <p id="round-p">0</p>
-                    <p>Rounds</p>
-                </div>
-                <div class="game-counter">
-                    <p id="wins-p">0</p>
-                    <p>Wins</p>
-                </div>
-                <div class="game-counter">
-                    <p id="losses-p">0</p>
-                    <p>Losses</p>
+            <div class="result-info">
+                <div id="info">
+                    <div class="game-counter">
+                        <p id="round-p">0</p>
+                        <p>Rounds</p>
+                    </div>
+                    <div class="game-counter">
+                        <p id="wins-p">0</p>
+                        <p>Wins</p>
+                    </div>
+                    <div class="game-counter">
+                        <p id="losses-p">0</p>
+                        <p>Losses</p>
+                    </div>
                 </div>
             </div>
         </div>

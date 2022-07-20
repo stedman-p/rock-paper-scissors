@@ -40,9 +40,6 @@ html {
 }
 body {
 	line-height: 1;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     margin: auto;
 }
 ol, ul {
@@ -61,6 +58,29 @@ table {
 	border-spacing: 0;
 }
 
+/* variables */
+
+:root {
+    --grey1: #f5f5f5;
+    --grey2: #d6d6d6;
+    --grey3: #adadad;
+    --grey4: #474747;
+    --grey5: #1f1f1f;
+
+    --prim1: #f4f3f7;
+    --prim2: #d2cedf;
+    --prim3: #a58cbf;
+    --prim4: #796b9e;
+    --prim5: #4a4063;
+
+    --sec1: #DCF9F3;
+    --sec2: #96EDDC;
+    --sec3: #00E0AC;
+    --sec4: #00916E;
+    --sec5: #00523F;
+    
+}
+
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
@@ -76,14 +96,18 @@ h3 {
 button {
     border-width: 1.55px;
     padding: 2px;
-    background-color: beige;
+    background-color: #e989c4;
     border-radius: .5em;
-    box-shadow: 3px 2.5px 2.5px grey;
+    box-shadow: 1px 2px 0px rgb(163, 163, 163);;
     font-weight: bold;
 }
 
 button:hover {
-    background-color: lightgray;
+    box-shadow: none;
+}
+
+button:active {
+    background-color: #c271a3;
 }
 
 footer {
@@ -99,8 +123,23 @@ footer {
     /* justify-content: centers; */
     align-items: center;
     max-width: 500px;
-    background-color: aliceblue;
-    min-height: 800px;
+    background-color: #d7c3f6;
+    /* min-height: 800px; */
+}
+
+.header {
+    background-color: #a06fed;
+    width: 100%;
+    color: whitesmoke;
+    box-shadow: 0em .25em 0.3em #9f6feda8;
+}
+
+div.header > h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 9px;
+    color: var(--grey1);
+    text-shadow: 2px 0px var(--grey5);
 }
 
 /* 
@@ -114,8 +153,16 @@ footer {
     align-items: center;
 }
 
+div.game > h3 {
+    box-shadow: 0 5em grey;
+}
+
 fieldset {
     width: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: #f0e7fc;
+    padding: 2em 0em 2em 0em;
 }
 
 input.choice-button {
@@ -123,28 +170,41 @@ input.choice-button {
     width: 10em;
     margin: 0.5em;
     padding: .25em;
-    background-color: beige;
-    border: 2px solid black;
-    border-radius: 5px;
+    background-color: #e989c4;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px grey;
+}
+
+input.choice-button:hover {
+    box-shadow: none;
+}
+
+input.choice-button:active {
+    background-color: #c271a3;
 }
 
 button#play {
     margin: 10px 0px 10px 0px;
+    box-shadow: 2px 4px 20px grey;;
+}
+
+button#play:hover {
+    box-shadow: none;
 }
 
 .results {
-    width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #fef3e2;
 }
 
-#info {
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.result-header {
+    width: 100%;
+    background-color: #facc89;
+    
 }
 
 #choices {
@@ -152,14 +212,16 @@ button#play {
     display: flex;
     flex: row;
     justify-content: space-between;
+    padding-top: 1em;
 }
 
 .choice {
     width: 5em;
     height: 6.4em;
-    background-color: beige;
-    border: 2px solid black;
+    background-color: #f7a73f;
     border-radius: 5px;
+    padding: .2em .2em .2em .2em;
+    box-shadow: 20px 20px 100px 10px lightgrey, 2px 4px 20px 2px lightgrey;
 }
 
 div img {
@@ -173,12 +235,19 @@ div.choice > p {
     margin-bottom: auto;
 }
 
-.placeholder {
+.result-info {
     width: 100%;
-    height: 0;
-    padding-top: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-color:#facc89;
+    display: flex;
+    justify-content: center;
+    padding: 1em 0em 0.5em 0em;
+}
+
+#info {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 div#result {
@@ -190,16 +259,21 @@ div#result {
 
 .game-counter {
     width: 5em;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 5px;
     text-align: center;
-    margin-top: 5px;
-    background-color: beige;
+    background-color:#f7a73f;
+    box-shadow: 1.5px 1.5px 0px #ac7834;
+}
+
+div.game-counter > p {
+    text-align: center;
 }
 
 footer {
-    position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 500px;
+    background-color: #a06fed;
+    color:var(--light-text-color);
 }
 
