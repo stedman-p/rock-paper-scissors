@@ -265,10 +265,10 @@ div.choice > p {
 }
 
 #info {
-    width: 300px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 div#result {
@@ -285,6 +285,7 @@ div#result {
     text-align: center;
     background-color:#f7a73f;
     box-shadow: 1.5px 1.5px 0px #ac7834;
+    margin: 0em 0.5em;
 }
 
 div.game-counter > p {
@@ -293,8 +294,28 @@ div.game-counter > p {
 
 footer {
     bottom: 0;
-    width: 500px;
+    width: 100%;    
     background-color: #a06fed;
-    color:var(--light-text-color);
 }
 
+footer * {
+    color: whitesmoke;
+}
+
+footer > h3 {
+    background-color: #d7c3f6;
+    color: black;
+    margin: 0;
+    padding: .5em;
+}
+
+#links {
+    display: flex;
+    padding: 2em 0em 1em 0em;
+    background: rgb(215,195,246);
+    background: linear-gradient(180deg, rgba(215,195,246,1) 0%, rgba(160,111,237,1) 35%);
+}
+
+.link {
+    margin: 0em 1em;
+}
