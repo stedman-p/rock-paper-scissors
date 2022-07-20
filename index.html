@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <script src="scripts.js" defer></script>
+    <script src="./scripts.js" defer></script>
     <title>Rock Paper Scissors</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
@@ -18,9 +18,9 @@
             <br>
             <h3 class="toggle">Select your move</h3>
             <fieldset class="toggle choices">
-                <input type="image" src="./img/rock-icon.svg" id="rock-btn" class="toggle choice-button choose-rock"></input>
-                <input type="image" src="./img/paper-icon.svg" id="paper-btn" class="toggle choice-button choose-paper"></input>
-                <input type="image" src="./img/scissors-icon.svg" id="scissors-btn" class="toggle choice-button choose-scissors"></input>
+                <input type="radio" name="rps-choice" src="./img/rock-icon.svg" id="rock-btn" class="toggle choice-button choose-rock"></input>
+                <input type="radio" name="rps-choice" src="./img/paper-icon.svg" id="paper-btn" class="toggle choice-button choose-paper"></input>
+                <input type="radio" name="rps-choice" src="./img/scissors-icon.svg" id="scissors-btn" class="toggle choice-button choose-scissors"></input>
             </fieldset>
             <button id="play">Play round!</button>
         </div>
@@ -59,7 +59,7 @@
             </div>
         </div>
         <footer>
-            <h3 id="links">Links</h3>
+            <h3>Links</h3>
             <br>
             <div id="links">
                 <a href="https://github.com/stedman-p" title="Peter Stedman">My Github</a>
