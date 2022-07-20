@@ -4,9 +4,17 @@
     rps = the popular game Rock Paper Scissors
 */
 
+const playerChoices = document.querySelectorAll("input");
+
+playerChoices.forEach(element => {
+    element.addEventListener("click", selectChoice)
+});
+
 const playbutton = document.getElementById("play");
 
-playbutton.addEventListener("click", game);
+playbutton.addEventListener("click", function(e) {
+    incrementCounterById("round-p")
+});
 
 function game() {
     let winLoseDraw = [0, 0, 0];
@@ -15,6 +23,7 @@ function game() {
     for (i = 0; i < 5; i++) {
         console.log(`Round ${i + 1}`);
         roundString = playRound(
+            // change input to buttons
             prompt("'Rock', 'Paper', or 'Scissors?'"),
             computerPlay()
         );
@@ -41,6 +50,8 @@ function game() {
     }
 }
 
+    // Returns 0 if the player wins, 1 if the player loses, 3 if they tie
+
 function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase();
     computerSelection = computerSelection.toLowerCase();
@@ -51,6 +62,16 @@ function playRound(playerSelection, computerSelection) {
     );
 
     return `You ${winStatus}! ${playerSelection.toUpperCase()} ${winStatus}s against ${computerSelection.toUpperCase()}!`;
+}
+
+function selectChoice() {
+    
+}
+
+function incrementCounterById(elementId) {
+    const Incrementee = document.getElementById(elementId);
+
+    Incrementee.textContent = parseInt(Incrementee.textContent) + 1 + "";
 }
 
 function determineWinner(player1, player2) {
